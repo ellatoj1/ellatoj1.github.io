@@ -1,5 +1,3 @@
-# ellatoj1.github.io
-
 # Swedish Transport Agency Vehicle and User Management System
 
 ## Overview
