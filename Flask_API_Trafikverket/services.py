@@ -1,8 +1,7 @@
 from models import db, User, Car
 
-# statiska metoder gör att man kan anropa dessa metoder, 
-# utan att behöva skapa en instans av klassen. 
-# vilket förenklar åtkomsten och gör koden mer modulär och lätt att använda
+# static methods allow you to call these methods without creating an instance of the class
+# which simplifies access and makes the code more modular and easy to use
 
 
 class UserService:
@@ -63,7 +62,7 @@ class CarService:
         car = Car.query.filter_by(id=car_id).first()
         if car:
             for key, value in data.items():
-                setattr(car, key, value if value is not None else getattr(car, key)) # setattr och getattr används för att sätta och hämta attribut på objektet car 
+                setattr(car, key, value if value is not None else getattr(car, key)) # setattr och getattr is used to set and get attributes of an object
             db.session.commit()
             return car.to_dict()
         return None

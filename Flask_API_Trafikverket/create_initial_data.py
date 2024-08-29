@@ -1,7 +1,6 @@
 from app import app, db
 from models import User, Car
 
-# skapa databasen så vi slipper göra detta i terminalen :)
 with app.app_context():
     db.create_all()
 
@@ -18,7 +17,7 @@ users_data = [
     {"first_name": "Mikael", "last_name": "Berg", "personal_number": "19841228-4567", "address": "Lokalgatan 10, 012 34 Sektorn"}
     ]
 
-# skapar och lägger till användare i databasen
+# create and add users to the database
 with app.app_context():
     users = []
     for data in users_data:
@@ -26,39 +25,39 @@ with app.app_context():
         #     last_name=data["last_name"], 
         #     personal_number=data["personal_number"], 
         #     address=data["address"])
-        user = User(**data) # **data unpackar dictionaryn till key value pairs som argument till User
+        user = User(**data) # **data to unpack dictionary
         db.session.add(user)
-        users.append(user)  # lägger till användaren i listan för att kunna använda den senare
-    db.session.commit()  # commit efter alla användare är tillagda för effektivitet
+        users.append(user)  # save user objects in a list
+    db.session.commit()  # commit to database
 
-    # uppdaterar användarobjekten med ID som tilldelats av databasen
+    # update users list with the user objects from the database
     for user in users:
         db.session.refresh(user)
 
-# data om bilar som kräver att users redan är skapade och commitade för att ägarID ska tilldelas
+# create cars data
 cars_data = [
-    {"brand": "Porsche", "model_name": "911 GT2 RS", "model_year": "2023", "color": "Grön", "registration_plate": "XYZ123", "owner_id": users[0].id},
-    {"brand": "Volvo", "model_name": "XC90", "model_year": "2021", "color": "Svart", "registration_plate": "ABC123", "owner_id": users[0].id},
-    {"brand": "Porsche", "model_name": "944 Turbo S", "model_year": "1988", "color": "Lila", "registration_plate": "SAA123", "owner_id": users[1].id},
-    {"brand": "Datsun", "model_name": "240Z", "model_year": "1977", "color": "Röd", "registration_plate": "TES123", "owner_id": users[1].id},
-    {"brand": "BMW", "model_name": "M340i", "model_year": "2021", "color": "Grå", "registration_plate": "BMW123", "owner_id": users[2].id},
-    {"brand": "Audi", "model_name": "Quattro", "model_year": "1980", "color": "Grå", "registration_plate": "AUD123", "owner_id": users[3].id},
+    {"brand": "Porsche", "model_name": "911 GT2 RS", "model_year": "2023", "color": "Green", "registration_plate": "XYZ123", "owner_id": users[0].id},
+    {"brand": "Volvo", "model_name": "XC90", "model_year": "2021", "color": "Black", "registration_plate": "ABC123", "owner_id": users[0].id},
+    {"brand": "Porsche", "model_name": "944 Turbo S", "model_year": "1988", "color": "Purple", "registration_plate": "SAA123", "owner_id": users[1].id},
+    {"brand": "Datsun", "model_name": "240Z", "model_year": "1977", "color": "Red", "registration_plate": "TES123", "owner_id": users[1].id},
+    {"brand": "BMW", "model_name": "M340i", "model_year": "2021", "color": "Grey", "registration_plate": "BMW123", "owner_id": users[2].id},
+    {"brand": "Audi", "model_name": "Quattro", "model_year": "1980", "color": "Grey", "registration_plate": "AUD123", "owner_id": users[3].id},
     {"brand": "Mercedes-Benz", "model_name": "300 SL", "model_year": "1954", "color": "Silver", "registration_plate": "MER123", "owner_id": users[4].id},
-    {"brand": "Lancia", "model_name": "Delta HF Integrale", "model_year": "1993", "color": "Blå", "registration_plate": "FOR123", "owner_id": users[5].id},
-    {"brand": "Toyota", "model_name": "Supra", "model_year": "2002", "color": "Vit", "registration_plate": "TOY123", "owner_id": users[6].id},
-    {"brand": "Honda", "model_name": "NSX-R", "model_year": "2002", "color": "Svart", "registration_plate": "HON123", "owner_id": users[7].id},
-    {"brand": "Mazda", "model_name": "RX-7 Spirit R", "model_year": "2002", "color": "Blå", "registration_plate": "SKO123", "owner_id": users[8].id},
-    {"brand": "Nissan", "model_name": "Skyline GT-R V·Spec II Nür", "model_year": "2002", "color": "Lila", "registration_plate": "NIS123", "owner_id": users[9].id},
-    {"brand": "Hyundai", "model_name": "i30 N", "model_year": "2017", "color": "Blå", "registration_plate": "HYU123", "owner_id": users[5].id},
-    {"brand": "Audi", "model_name": "RS6", "model_year": "2017", "color": "Svart", "registration_plate": "PEU123", "owner_id": users[6].id},
-    {"brand": "Abarth", "model_name": "500 Competizione", "model_year": "2018", "color": "Gul", "registration_plate": "FIA123", "owner_id": users[4].id}
+    {"brand": "Lancia", "model_name": "Delta HF Integrale", "model_year": "1993", "color": "Blue", "registration_plate": "FOR123", "owner_id": users[5].id},
+    {"brand": "Toyota", "model_name": "Supra", "model_year": "2002", "color": "White", "registration_plate": "TOY123", "owner_id": users[6].id},
+    {"brand": "Honda", "model_name": "NSX-R", "model_year": "2002", "color": "Black", "registration_plate": "HON123", "owner_id": users[7].id},
+    {"brand": "Mazda", "model_name": "RX-7 Spirit R", "model_year": "2002", "color": "Blue", "registration_plate": "SKO123", "owner_id": users[8].id},
+    {"brand": "Nissan", "model_name": "Skyline GT-R V·Spec II Nür", "model_year": "2002", "color": "Purple", "registration_plate": "NIS123", "owner_id": users[9].id},
+    {"brand": "Hyundai", "model_name": "i30 N", "model_year": "2017", "color": "Blue", "registration_plate": "HYU123", "owner_id": users[5].id},
+    {"brand": "Audi", "model_name": "RS6", "model_year": "2017", "color": "Black", "registration_plate": "PEU123", "owner_id": users[6].id},
+    {"brand": "Abarth", "model_name": "500 Competizione", "model_year": "2018", "color": "Yellow", "registration_plate": "FIA123", "owner_id": users[4].id}
     ]
 
-# skapar och lägger till bilar i databasen
+# create and add cars to the database
 with app.app_context():
     for data in cars_data:
         car = Car(**data) 
         db.session.add(car)
     db.session.commit()  
 
-print("Databasen har skapats och fyllts med startdata.")
+print("Database has been created and has been populated with initial data.")
