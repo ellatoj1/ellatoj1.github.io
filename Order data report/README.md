@@ -11,8 +11,8 @@ This project is designed to process and combine order data from multiple sources
 ## Acceptance Criteria
 
 - **Data Import and Combination:**
-  - Order data from `order_data_1` and `order_data_2` should be imported and combined into a unified table without any data loss.
-  - The combined order table should be further merged with the `customer_details` table based on a common key (e.g., customer ID).
+  - Order data from `order_data_1.csv` and `order_data_2.csv` should be imported and combined into a unified table without any data loss.
+  - The combined order table should be further merged with the `customer_details.csv` table based on a common key (e.g., customer ID).
 
 - **Data Quality:**
   - Duplicate rows in the combined table should be identified and removed.
