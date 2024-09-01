@@ -7,10 +7,10 @@ Welcome to the repository for my GitHub Pages site! This repository contains the
 The repository includes several projects that I have worked on:
 
 - **[Flask_API_Trafikverket](https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Flask_API_Trafikverket)**: A Flask API project interacting with Trafikverket's services.
-- **Library_system**: A basic library management system.
-- **Order_data_report**: A report generation tool for order data.
-- **Sales_Report**: A sales report tool.
-- **Web_scraping_to_JSON**: A web scraping project that outputs data in JSON format.
+- **[Library_system](https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Library_system%20)**: A basic library management system.
+- **[Order_data_report](https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Order_data_report)**: A report generation tool for order data.
+- **[Sales_Report](https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Sales_Report)**: A sales report tool.
+- **[Web_scraping_to_JSON](https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Web_scraping_to_JSON)**: A web scraping project that outputs data in JSON format.
 
 ## Getting Started
 
