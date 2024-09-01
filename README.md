@@ -6,7 +6,7 @@ Welcome to the repository for my GitHub Pages site! This repository contains the
 
 The repository includes several projects that I have worked on:
 
-- **[Flask_API_Trafikverket]** (https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Flask_API_Trafikverket): A Flask API project interacting with Trafikverket's services.
+- **[Flask_API_Trafikverket](https://github.com/ellatoj1/ellatoj1.github.io/tree/main/Flask_API_Trafikverket)**: A Flask API project interacting with Trafikverket's services.
 - **Library_system**: A basic library management system.
 - **Order_data_report**: A report generation tool for order data.
 - **Sales_Report**: A sales report tool.
