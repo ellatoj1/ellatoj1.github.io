@@ -4,7 +4,7 @@
 
 This project implements a Library Management System that allows a librarian to efficiently manage the library's book inventory, handle book loans and returns, and track overdue books. It also includes comprehensive testing to ensure that all functionalities work as expected.
 
-## Ultimate User Story
+## User Story
 
 ### **As a Librarian**, I want to manage the entire library's book lending system so that I can effectively administer the available books, register loans and returns, and keep track of overdue books.
 
@@ -30,9 +30,5 @@ This project implements a Library Management System that allows a librarian to e
     - A complete set of test cases should be included for each function in the system, verifying that the functions for adding, removing, loaning, returning, and calculating overdue days work correctly.
     - The tests should cover scenarios where books are added, removed, marked as loaned, returned, and where overdue calculations are performed and managed.
 
-## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/library-management-system.git
 
