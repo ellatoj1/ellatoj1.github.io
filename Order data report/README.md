@@ -1,4 +1,4 @@
-# README: Order Data Processing and Export
+# Order Data Processing and Export
 
 ## Description
 
