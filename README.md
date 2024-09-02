@@ -1,4 +1,6 @@
-# ellatoj1.github.io
+# Hi there, I am Ella 
+
+## About me
 
 Welcome to the repository for my GitHub Pages site! This repository contains the source code for my personal website hosted on GitHub Pages.
 
@@ -19,4 +21,6 @@ To explore any of the projects, simply navigate to the respective directory. Eac
 ## Contact
 
 For any inquiries, you can reach me via GitHub or [LinkedIn](https://www.linkedin.com/in/ellatojit/).
+
+
 
