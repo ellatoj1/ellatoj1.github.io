@@ -1,6 +1,7 @@
 # Hi there, I am Ella 
 
 ## About me
+coming soon.. 
 
 Welcome to the repository for my GitHub Pages site! This repository contains the source code for my personal website hosted on GitHub Pages.
 
