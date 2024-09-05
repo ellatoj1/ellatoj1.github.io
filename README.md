@@ -1,7 +1,7 @@
 # Hi there, I am Ella 
 
 ## About me
-coming soon.. 
+Hi, I'm Ella Tojit, a student at IHM Business School studying Customer Data Development. I’m passionate about combining data analysis with business insights to create innovative solutions. Proficient in Python, SQL, and digital marketing tools, I’ve worked on key projects such as CRM migrations and API integrations. I enjoy problem-solving and optimizing systems to drive business outcomes. In my free time, I love painting, furniture design, and weightlifting, and I’m an active supporter of Djurgården IF Football Club.
 
 Welcome to the repository for my GitHub Pages site! This repository contains the source code for my personal website hosted on GitHub Pages.
 
