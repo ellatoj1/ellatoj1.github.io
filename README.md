@@ -1,12 +1,11 @@
 # Hi there, I am Ella 
 
 ## About me
+Welcome to the repository for my GitHub Pages site! 
 I am a student at IHM Business School studying Customer Data Development, passionate about combining data analysis with business insights to create innovative solutions. Proficient in Python, SQL, and digital marketing tools, I’ve worked on key projects such as CRM migrations and API integrations. I enjoy problem-solving and optimizing systems to drive business outcomes. In my free time, I love painting, furniture design, and weightlifting, and I’m an active supporter of Djurgården IF Football Club.
 
 I will complete my education in 2025 and hope to gain even more valuable experience both through my studies and real-world challenges during internships, building a strong foundation for my future career.
 
-
-Welcome to the repository for my GitHub Pages site! 
 
 ## Project Structure
 
