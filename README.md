@@ -5,7 +5,8 @@ I am a student at IHM Business School studying Customer Data Development, passio
 
 I will complete my education in 2025 and hope to gain even more valuable experience both through my studies and real-world challenges during internships, building a strong foundation for my future career.
 
-# Welcome to the repository for my GitHub Pages site! This repository contains the source code for my personal website hosted on GitHub Pages.
+
+Welcome to the repository for my GitHub Pages site! This repository contains the source code for my personal website hosted on GitHub Pages.
 
 ## Project Structure
 
