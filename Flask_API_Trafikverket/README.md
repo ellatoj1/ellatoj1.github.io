@@ -49,14 +49,3 @@ As a user, I want the ability to easily manage and update my personal informatio
 - I want to remove my information from the Swedish Transport Agency's register if I move abroad or no longer own any vehicles, so that my details are not kept unnecessarily.
 - I want to create a new profile with the Swedish Transport Agency when I become a vehicle owner, so that I can ensure all relevant information is correctly recorded.
 
-## Installation and Usage
-
-_To use this system, please follow the technical instructions and requirements provided in the project documentation._
-
-## Contributing
-
-_We welcome contributions to this project. For more information on how you can contribute, please read our contributing guide._
-
-## License
-
-_Information about licensing can be found in the accompanying LICENSE file._
